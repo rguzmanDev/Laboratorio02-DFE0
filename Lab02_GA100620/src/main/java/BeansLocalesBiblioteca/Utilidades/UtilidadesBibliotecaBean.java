@@ -1,6 +1,6 @@
 package BeansLocalesBiblioteca.Utilidades;
 
-import javax.ejb.Stateless;
+import jakarta.ejb.Stateless;
 
 @Stateless
 public class UtilidadesBibliotecaBean implements IUtilidadesBibliotecaLocal {

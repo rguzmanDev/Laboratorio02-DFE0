@@ -1,6 +1,7 @@
 package BeansStatelessBiblioteca;
 
-import javax.ejb.Remote;
+import jakarta.ejb.Remote;
+
 
 @Remote
 public interface ICalculadoraEstadisticasBibliotecaStateless {

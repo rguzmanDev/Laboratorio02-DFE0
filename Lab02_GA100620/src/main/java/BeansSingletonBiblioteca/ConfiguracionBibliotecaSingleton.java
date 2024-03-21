@@ -1,8 +1,8 @@
 package BeansSingletonBiblioteca;
 
-import javax.ejb.EJB;
-import javax.ejb.Singleton;
 import BeansLocalesBiblioteca.Biblioteca.IBibliotecaLocal;
+import jakarta.ejb.EJB;
+import jakarta.ejb.Singleton;
 
 @Singleton
 public class ConfiguracionBibliotecaSingleton implements IConfiguracionBibliotecaSingleton {
@@ -23,6 +23,7 @@ public class ConfiguracionBibliotecaSingleton implements IConfiguracionBibliotec
     }
 
     // Ejemplo de un nuevo método que utiliza el EJB local
+    @Override
     public String obtenerInformacionLibro(String isbn) {
         // Aquí deberías buscar la información del libro por su ISBN
         // Pero para mantenerlo simple, retornaremos un string de prueba

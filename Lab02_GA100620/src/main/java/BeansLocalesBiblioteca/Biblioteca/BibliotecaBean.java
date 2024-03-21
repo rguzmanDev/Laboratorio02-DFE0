@@ -1,6 +1,6 @@
 package BeansLocalesBiblioteca.Biblioteca;
 
-import javax.ejb.Stateless;
+import jakarta.ejb.Stateless;
 import java.util.HashMap;
 import java.util.Map;
 

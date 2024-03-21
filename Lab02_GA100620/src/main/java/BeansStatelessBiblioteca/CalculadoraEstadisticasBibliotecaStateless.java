@@ -1,10 +1,10 @@
 package BeansStatelessBiblioteca;
 
-import javax.ejb.Stateless;
-import javax.ejb.EJB;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import BeansLocalesBiblioteca.Biblioteca.IBibliotecaLocal;
+import jakarta.ejb.EJB;
+import jakarta.ejb.Stateless;
 
 @Stateless
 public class CalculadoraEstadisticasBibliotecaStateless implements ICalculadoraEstadisticasBibliotecaStateless {
@@ -29,6 +29,7 @@ public class CalculadoraEstadisticasBibliotecaStateless implements ICalculadoraE
     }
     
     // Método que utiliza el EJB local para obtener información de un libro por su ISBN
+    @Override
     public String obtenerInformacionLibro(String isbn) {
         // La implementación real buscaría detalles en el EJB local o la base de datos
         return "Información del libro con ISBN " + isbn + ": Este es un ejemplo de información del libro.";

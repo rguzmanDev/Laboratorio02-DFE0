@@ -1,10 +1,11 @@
 package BeansStatefulBiblioteca;
 
-import javax.ejb.Stateful;
+
 import java.util.HashSet;
 import java.util.Set;
-import javax.ejb.EJB;
 import BeansLocalesBiblioteca.Biblioteca.IBibliotecaLocal;
+import jakarta.ejb.EJB;
+import jakarta.ejb.Stateful;
 
 @Stateful
 public class GestorLibros implements IGestorLibros {
@@ -35,6 +36,7 @@ public class GestorLibros implements IGestorLibros {
     }
     
     // Ejemplo de un método que utiliza el EJB local
+    @Override
     public String obtenerInformacionLibro(String isbn) {
         // Simulación de obtener información de un libro. La implementación real buscaría detalles en el EJB local o la base de datos
         return "Información del libro con ISBN " + isbn + ": Este es un ejemplo de la información del libro.";
